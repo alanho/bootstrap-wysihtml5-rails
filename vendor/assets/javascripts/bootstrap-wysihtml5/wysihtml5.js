@@ -4971,7 +4971,7 @@ wysihtml5.dom.parse = (function() {
       classes = classes.concat(oldClasses.split(WHITE_SPACE_REG_EXP));
     }
     classesLength = classes.length;
-    for (i = 0; i<classesLength; i++) 
+    for (i = 0; i<classesLength; i++) {
       currentClass = classes[i];
       if (allowedClasses[currentClass]) {
         newClasses.push(currentClass);
