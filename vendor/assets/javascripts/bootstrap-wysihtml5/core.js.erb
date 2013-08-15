@@ -215,7 +215,7 @@
                 var el = $(target);
                 self.toolbar.find('.current-color').text(el.html());
             });
-
+            $(".wysihtml5-toolbar", this.el.parent()).remove();
             this.el.before(toolbar);
 
             return toolbar;
